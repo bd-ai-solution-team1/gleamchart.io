@@ -1,1 +1,49 @@
-theme: jekyll-theme-cayman
+# Site Information
+license:          "MIT"
+license-url:      "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+author:           "Blackrock Digital"
+
+# Site Settings
+baseurl:          ""
+
+# Build settings
+exclude:          [node_modules]
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        /articles/:year/:month/:day/:title/
+
+# Server
+url:              https://startbootstrap.com
+enforce_ssl:      startbootstrap.com
+encoding:         UTF-8
+host:             localhost
+port:             9000
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - rouge
+
+# Collections
+collections:
+  premium:
+    output: false
+  templates:
+    output: true
+    permalink: /template-overviews/:title/
+  snippets:
+    output: true
+    permalink: /snippets/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/articles/page:num/"
+
+# Blog Excerpt Separator
+excerpt_separator: "<!--more-->"
