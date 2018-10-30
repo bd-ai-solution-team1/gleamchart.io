@@ -32,6 +32,8 @@ plugins:
 
 # Collections
 collections:
+  charts:
+    output: true
   premium:
     output: false
   templates:
