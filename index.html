@@ -30,11 +30,11 @@ meta-title: gleamchart
 <section class="themes">
   <div class="container">
     <div class="row">
-      {% for chart in site.charts %}
+      {% for chart in site.charts reversed %}
         <div class="col-lg-4 col-md-6 sb-preview text-center">
           <div class="card h-100">
             <a class="sb-preview-img" href="{{ chart.src }}">
-              <img class="card-img-top" src="{{ chart.imgsrc }}" alt="{{ chart.imgdesc }}">
+              <img class="card-img-top" src="{{ chart.img-src }}" alt="{{ chart.img-desc }}">
             </a>
             <div class="card-body">
               <h4 class="card-title">{{ chart.title }}</h4>
