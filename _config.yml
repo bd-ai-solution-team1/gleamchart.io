@@ -33,7 +33,7 @@ plugins:
 # Collections
 collections:
   charts:
-    output: true
+    output: false
   premium:
     output: false
   templates:
