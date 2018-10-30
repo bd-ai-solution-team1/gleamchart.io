@@ -45,36 +45,3 @@ meta-title: gleamchart
     </div>
   </div>
 </section>
-<hr class="hr-home">
-<section class="premium">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>Looking for something more?</h2>
-        <p class="lead">Try these hand picked premium themes!</p>
-      </div>
-    </div>
-    <div class="row">
-      <!-- Creative Tim -->
-      {% for item in site.premium reversed %}
-        {% if item.categories contains 'featured' %}
-          <div class="col-lg-4 col-md-6 sb-preview text-center">
-            <div class="card h-100">
-              <a class="sb-preview-img" href="{{ item.src }}" onclick="ga('send','event','Product','click','{{ item.title }}')">
-                <img class="card-img-top" src="{{ item.img-src }}" alt="{{ item.img-desc }}">
-              </a>
-              <div class="card-body">
-                <h4 class="card-title">{{ item.title }}</h4>
-                <p class="card-text">{{ item.bump }}</p>
-              </div>
-              <div class="card-footer">
-                <a href="{{ item.src }}" class="btn btn-secondary" onclick="ga('send','event','Product','click','{{ item.title }}')">Preview &amp; Download</a>
-              </div>
-            </div>
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <a href="/buy-bootstrap-templates" class="btn btn-lg btn-primary mx-auto">View More Premium Themes</a>
-  </div>
-</section>
