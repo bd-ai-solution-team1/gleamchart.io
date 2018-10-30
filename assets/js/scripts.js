@@ -20,6 +20,7 @@ $('body').scrollspy({
 
 // Configure the Search Plugin
 $(function() {
+  /*
   $('#search-query').lunrSearch({
     indexUrl: '/js/index.json', // url for the .json file containing search index data
     results: '#search-results', // selector for containing search results element
@@ -27,6 +28,7 @@ $(function() {
     titleMsg: '<h2>Search results<h2>', // message attached in front of results (can be empty)
     emptyMsg: '<p>Nothing found.</p>' // shown message if search returns no results
   });
+  */
 });
 
 // Open modal when download click occurs
