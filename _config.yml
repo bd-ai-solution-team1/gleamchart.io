@@ -34,8 +34,6 @@ plugins:
 collections:
   charts:
     output: false
-  premium:
-    output: false
   templates:
     output: true
     permalink: /template-overviews/:title/
